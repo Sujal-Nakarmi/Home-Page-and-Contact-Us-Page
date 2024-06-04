@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Title Here</title>
+    <link rel="stylesheet" href="/HomePage.css">
+    
+</head>
+<body>
+    <form>  
+        <div class="Nav">
+        <img src="1.png" class="img">
+        <div class="sear">
+        <input class="search" type="search" >
+        <button class="sb" type="submit" name="search">Search</button>
+        </div>
+        <button class="login" name="login" type="submit">Login</button> 
+        <img src="2.jpg" class="account">
+        </div>
+
+        <div>
+        <p class="Airpod"> Air </br>
+            Pods</br>
+            Pro
+            </p>
+        <div class="photo">
+        <img src="3.png"  height="400px" width="400px">
+        </div>
+        </div>
+
+        <div>
+            <p class="small"> Air </br>
+                Pods </br>
+                Pro </p>
+
+            <p class="text"> Adaptive EQ that tunes</br>
+                music to your ear, and</br>
+                delivers an experience</br>
+                that’s simply magical.</br>
+
+            </p>
+
+            <button class="button">Shop Now</button>
+
+            <img src="4.webp" class="charge" height="350px" width="350px">
+        </div>
+    </form>
+    <button id="open_cart_btn">
+        <img src="cart.png" style="width: 30px;">
+    </button>
+
+
+    <div class="sidecart">
+        <div class="cart_content">
+
+
+            <div class="cart_header">
+
+                <img src="cart.png" style ="width:40px" />
+                <div class="header_title">
+                    <h2>Your Cart</h2>
+
+                    </div>
+
+                <span id="close_btn" class="close_btn">&times;</span>
+            </div>
+           
+
+
+               
+                <div class="cart_items">
+                    <div class="item_img">
+                        <img src="airpods pro 2nd gen.jpg">
+                    </div>
+                    <div class="items_details">
+                        <p>Airpods Pro 2nd Generation</p>
+                        <strong> Rs $129 </strong>
+                    </div>
+
+                    
+                </div>
+
+                <div class="cart_items">
+                    <div class="item_img">
+                        <img src="airpods 3rd gen.jpg">
+                    </div>
+                    <div class="items_details">
+                        <p>Airpods Pro 3rd Generation</p>
+                        <strong> Rs $169 </strong>
+                    </div>
+
+                    
+                </div>
+
+                <div class="cart_items">
+                    <div class="item_img">
+                        <img src="airmax.png">
+                    </div>
+                    <div class="items_details">
+                        <p>Air Pod Max </p>
+                        <strong> Rs $549 </strong>
+                    </div>
+
+                    
+                </div>
+
+
+
+
+                <div class="cart_action">
+                <div class="subtotal">
+                    <p>SUBTOTAL: $847</p>
+
+
+
+                </div>
+                
+                <button id="">Checkout</button>
+
+
+                </div>
+
+</div>
+</div>
+<script>
+    const openBtn = document.getElementById('open_cart_btn');
+    const cart = document.querySelector('.sidecart'); // Changed to select by class
+    const closeBtn = document.getElementById('close_btn');
+
+    openBtn.addEventListener('click', openCart);
+    closeBtn.addEventListener('click', closeCart);
+
+    function openCart(){
+        cart.classList.add('open');
+    }
+
+    function closeCart(){
+        cart.classList.remove('open');
+    }
+</script>    
+</body>
+</html>
